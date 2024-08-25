@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -165,13 +165,13 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
             PhotonNetwork.CurrentRoom.SetCustomProperties(new() {
                 [Enums.NetRoomProperties.HostName] = newMaster.GetUniqueNickname()
             });
-            LocalChatMessage("You are the room's host! You can click on player names to control your room, or use chat commands. Do /help for more help.", Color.red);
+            LocalChatMessage("You are the Casino's host! You can click on player names to control your Casino, or use chat commands. Do /help for more help.", Color.red);
         }
         UpdateSettingEnableStates();
     }
     public void OnJoinedRoom() {
         Debug.Log($"[PHOTON] Joined Room ({PhotonNetwork.CurrentRoom.Name})");
-        LocalChatMessage(PhotonNetwork.LocalPlayer.GetUniqueNickname() + " joined the room", Color.red);
+        LocalChatMessage(PhotonNetwork.LocalPlayer.GetUniqueNickname() + " joined the Casino", Color.red);
         EnterRoom();
     }
     IEnumerator KickPlayer(Player player) {
@@ -192,7 +192,7 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
 
             return;
         }
-        LocalChatMessage(newPlayer.GetUniqueNickname() + " joined the room", Color.red);
+        LocalChatMessage(newPlayer.GetUniqueNickname() + " joined the Casino", Color.red);
         sfx.PlayOneShot(Enums.Sounds.UI_PlayerConnect.GetClip());
     }
     public void OnPlayerLeftRoom(Player otherPlayer) {
@@ -201,7 +201,7 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
         if (banList.Any(nip => nip.userId == otherPlayer.UserId)) {
             return;
         }
-        LocalChatMessage(otherPlayer.GetUniqueNickname() + " left the room", Color.red);
+        LocalChatMessage(otherPlayer.GetUniqueNickname() + " left the Casino", Color.red);
         sfx.PlayOneShot(Enums.Sounds.UI_PlayerDisconnect.GetClip());
     }
     public void OnRoomPropertiesUpdate(Hashtable updatedProperties) {
@@ -438,7 +438,7 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
 
             //version separation
             Match match = Regex.Match(Application.version, "^\\w*\\.\\w*\\.\\w*");
-            PhotonNetwork.NetworkingClient.AppVersion = match.Groups[0].Value;
+            PhotonNetwork.NetworkingClient.AppVersion = match.Groups[0].Value + "MrLuigiMod";
 
             string id = PlayerPrefs.GetString("id", null);
             string token = PlayerPrefs.GetString("token", null);
@@ -579,7 +579,7 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
         characterDropdown.SetValueWithoutNotify(Utils.GetCharacterIndex());
 
         if (PhotonNetwork.IsMasterClient)
-            LocalChatMessage("You are the room's host! You can click on player names to control your room, or use chat commands. Do /help for more help.", Color.red);
+            LocalChatMessage("You are the Casino's host! You can click on player names to control your room, or use chat commands. Do /help for more help.", Color.red);
 
         Utils.GetCustomProperty(Enums.NetPlayerProperties.PlayerColor, out int value, PhotonNetwork.LocalPlayer.CustomProperties);
         SetPlayerColor(value);
@@ -1462,6 +1462,6 @@ public class MainMenuManager : MonoBehaviour, ILobbyCallbacks, IInRoomCallbacks,
         return seconds;
     }
     public void ChangeLobbyHeader(string name) {
-        SetText(lobbyText, $"{name.ToValidUsername()}'s Lobby", true);
+        SetText(lobbyText, $"{name.ToValidUsername()}'s Casino", true);
     }
 }
