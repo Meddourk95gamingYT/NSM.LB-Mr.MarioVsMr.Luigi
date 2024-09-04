@@ -16,7 +16,7 @@ public class DiscordController : MonoBehaviour {
         return;
 #endif
 
-        discord = new Discord.Discord(962073502469459999, (ulong) CreateFlags.NoRequireDiscord);
+        discord = new Discord.Discord(1280903448069537853, (ulong) CreateFlags.NoRequireDiscord);
         activityManager = discord.GetActivityManager();
         activityManager.OnActivityJoinRequest += AskToJoin;
         activityManager.OnActivityJoin += TryJoinGame;
@@ -84,7 +84,7 @@ public class DiscordController : MonoBehaviour {
 
             activity.Details = PhotonNetwork.OfflineMode ? "Playing Offline" : "Playing Online";
             activity.Party = new() { Size = new() { CurrentSize = room.PlayerCount, MaxSize = room.MaxPlayers }, Id = PhotonNetwork.CurrentRoom.Name };
-            activity.State = room.IsVisible ? "In a Public Game" : "In a Private Game";
+            activity.State = room.IsVisible ? "In a Public Casino" : "In a Private Casino";
             activity.Secrets = new() { Join = PhotonNetwork.CloudRegion + "-" + room.Name };
 
             ActivityAssets assets = new();
@@ -108,7 +108,7 @@ public class DiscordController : MonoBehaviour {
 
             activity.Details = PhotonNetwork.OfflineMode ? "Playing Offline" : "Playing Online";
             activity.Party = new() { Size = new() { CurrentSize = room.PlayerCount, MaxSize = room.MaxPlayers }, Id = PhotonNetwork.CurrentRoom.Name };
-            activity.State = room.IsVisible ? "In a Public Lobby" : "In a Private Lobby";
+            activity.State = room.IsVisible ? "In a Public Casino" : "In a Private Casino";
             activity.Secrets = new() { Join = PhotonNetwork.CloudRegion + "-" + room.Name };
 
             activity.Assets = new() { LargeImage = "mainmenu" };
@@ -116,7 +116,7 @@ public class DiscordController : MonoBehaviour {
         } else {
             //in the main menu, not in a room
 
-            activity.Details = "Browsing the Main Menu...";
+            activity.Details = "Browsing the Casinos...";
             activity.Assets = new() { LargeImage = "mainmenu" };
 
         }
