@@ -11,7 +11,7 @@ All power-ups are included and remain faithful to their original counterparts, a
 
 [Play now in browser on itch.io!](https://ipodtouch0218.itch.io/nsmb-mariovsluigi)
 
-Windows, Linux, and Mac Builds: https://github.com/Meddourk95gamingYT/NSMB-MarioVsLuig
+Windows, Linux, and Mac Builds: https://github.com/Meddourk95gamingYT/NSMB-MarioVsLuigi
 
 ## Default Controls
 | Action | Keyboard | Gamepad *(unstable)* |
