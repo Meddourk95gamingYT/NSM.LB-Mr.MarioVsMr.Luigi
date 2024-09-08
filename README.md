@@ -1,17 +1,17 @@
-# NSMB-MarioVsLuigi
+# NSM.LB-Mr.MarioVsMr.Luigi
 A unity-standalone 2-10 player remake of the Mario vs. Luigi gamemode from the New Super Mario Bros DS download game. 
 
 Includes the 5 default levels (Grassland, Bricks, Castle, Pipes, and Ice), along with a handful of custom levels to battle on! 
 All power-ups are included and remain faithful to their original counterparts, along with the new addition of the Propeller Suit & Ice Flower!
 
 ## Discord
-[**Join the discord**](https://discord.gg/dgKVaUKpj5) to keep up to date with the development of the game, make feature suggestions, report bugs (if you're too lazy to use issues...), get technical support, look for people to play with, and just talk about the game!
+[**Join the discord**](https://discord.gg/bbhDgBpdN8) to keep up to date with the development of the game, make feature suggestions, report bugs (if you're too lazy to use issues...), look for people to play with, and just talk about the game!
 
 ## Download
 
 [Play now in browser on itch.io!](https://ipodtouch0218.itch.io/nsmb-mariovsluigi)
 
-Windows, Linux, and Mac Builds: https://github.com/ipodtouch0218/NSMB-MarioVsLuigi/releases/latest
+Windows, Linux, and Mac Builds: https://github.com/Meddourk95gamingYT/NSMB-MarioVsLuigi
 
 ## Default Controls
 | Action | Keyboard | Gamepad *(unstable)* |
@@ -25,29 +25,16 @@ Windows, Linux, and Mac Builds: https://github.com/ipodtouch0218/NSMB-MarioVsLui
 | Pause | Escape | Start Button |
 | UI Confirm | Left Mouse / Enter / Z | A Button |
 
-<details>
-  <summary><h2>Opening in Unity Editor</h2></summary>
-
-1. Install Unity 2022.1.9f1 (or newer) via Unity Hub (Installs > Install Editor > Scroll to bottom)
-2. Download and install [git](https://git-scm.com/downloads). Do NOT use the .zip download, as it will cause errors within Unity.
-3. Open Command Prompt (Windows) or Terminal (MacOS / Linux)
-4. Navigate to the folder you want the source code to be in using `cd <path>`. For example, `cd %USERPROFILE%\Documents` will save it in My Documents.
-5. Clone the repository by running `git clone https://github.com/ipodtouch0218/NSMB-MarioVsLuigi.git` in the Command Prompt / Terminal
-  - Optionally, [fork the repository](https://github.com/ipodtouch0218/NSMB-MarioVsLuigi/fork)
-6. Open the project in Unity Hub (gray "Open" button in top right)
-7. Change the Unity Editor to use your computer's platform in File > Build Settings
-8. Create a build using "Build and Run" inside File > Build Settings, or Ctrl+B
-
-</details>
-<details>
-  <summary><h2>Credits</h2></summary>
+### Mod Contributor
+* [@Meddourk](https://github.com/Meddourk95gamingYT)
+* [@ArianLust](https://github.com/arianlust)
 
 ### Original Content:
 * New Super Mario Bros.
 * New Super Mario Bros. Wii
 * Super Mario Maker 2
 
-### Contributors:
+### MvLo Contributors:
 * [@ipodtouch0218](https://github.com/ipodtouch0218)
 * @GradedWarrior
 * [@TheMoogle](https://github.com/TheMoogle)
