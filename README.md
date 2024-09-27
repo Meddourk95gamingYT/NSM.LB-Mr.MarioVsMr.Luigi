@@ -1,5 +1,5 @@
 # NSM.LB-Mr.MarioVsMr.Luigi
-A unity-standalone 2-10 player remake of the Mario vs. Luigi gamemode from the New Super Mario Bros DS download game. 
+A Mod of the unity-standalone 2-10 player remake of the Mario vs. Luigi gamemode from the New Super Mario Bros DS download game. 
 
 Includes the 5 default levels (Grassland, Bricks, Castle, Pipes, and Ice), along with a handful of custom levels to battle on! 
 All power-ups are included and remain faithful to their original counterparts, along with the new addition of the Propeller Suit & Ice Flower!
@@ -25,7 +25,7 @@ Windows, Linux, and Mac Builds: https://github.com/Meddourk95gamingYT/NSMB-Mario
 | Pause | Escape | Start Button |
 | UI Confirm | Left Mouse / Enter / Z | A Button |
 
-### Mod Contributor
+### Mod Contributors
 * [@Meddourk](https://github.com/Meddourk95gamingYT)
 * [@ArianLust](https://github.com/arianlust)
 
