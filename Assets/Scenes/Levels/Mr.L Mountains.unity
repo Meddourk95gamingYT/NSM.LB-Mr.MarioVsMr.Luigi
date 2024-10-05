@@ -38,6 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2592,6 +2593,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PiranhaPlant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1900118008454034842, guid: 28a7f3ea2c44a564d906449744561724,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -3044
       objectReference: {fileID: 0}
     - target: {fileID: 3416259037201337410, guid: 28a7f3ea2c44a564d906449744561724,
         type: 3}
