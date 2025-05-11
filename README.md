@@ -6,11 +6,11 @@ Includes the 5 default levels (Grassland, Bricks, Castle, Pipes, and Ice), along
 All power-ups are included and remain faithful to their original counterparts, along with the new addition of the Propeller Suit & Ice Flower!
 
 ## Discord
-[**Join the discord**](https://discord.gg/bbhDgBpdN8) to keep up to date with the development of the game, make feature suggestions, report bugs (if you're too lazy to use issues...), look for people to play with, and just talk about the game!
+[**Join the discord**](https://discord.gg/pp2rsHT8yR) to keep up to date with the development of the game, make feature suggestions, report bugs (if you're too lazy to use issues...), look for people to play with, and just talk about the game!
 
 ## Download
 
-[Play now in browser on itch.io!](https://ipodtouch0218.itch.io/nsmb-mariovsluigi)
+[Play now in browser on itch.io!](https://meddourk95.itch.io/new-super-mrluigi-bros-versus)
 
 Windows, Linux, and Mac Builds: https://github.com/Meddourk95gamingYT/NSMB-MarioVsLuigi
 
